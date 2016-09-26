@@ -45,21 +45,31 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+
+// Colors
+$blue: #42b8dd;
+$light-gray: #ebebeb;
+$medium-gray: #666666;
+$dark-gray: #363636;
+$black: #000;
+$white: #fff;
+
+$global-font-size: 16px;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: $blue,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+//$blue: #42b8dd;
+//$light-gray: #ebebeb;
+//$medium-gray: #666666;
+//$dark-gray: #363636;
+//$black: #000;
+//$white: #fff;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -234,7 +244,8 @@ $breadcrumbs-item-slash: true;
 // ----------
 
 $button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+//$button-margin: 0 0 $global-margin 0;
+$button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
