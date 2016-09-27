@@ -5,39 +5,45 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Foundation for Sites</title>
+	<script src="https://use.fontawesome.com/99d40ab52a.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="page">
 		<header>
 			<div class="row">
-				<div class="top-bar">
-					<div class="top-bar-left">
-						<ul class="menu">
-							<li class="site-title text-uppercase">Iddo</li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-					<div class="top-bar-right">
-						<div class="top-bar-right">
-							<ul class="menu">
-								<li><a href="#" class="button">Sing up</a></li>
-							</ul>
-						</div>
-					</div>
+				<div class="medium-2 columns">
+					<span class="site-title text-uppercase">Iddo</span>
+				</div>
+				<div class="top-bar-left medium-8 columns">
+					<ul class="menu main-nav simple">
+						<li class="menu-item"><a href="#">Home</a></li>
+						<li class="menu-item"><a href="#">Services</a></li>
+						<li class="menu-item"><a href="#">Portfolio</a></li>
+						<li class="menu-item"><a href="#">About</a></li>
+						<li class="menu-item"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="top-bar-right medium-2 columns">
+					<ul class="menu align-right">
+						<li><button class="button hollow">Sing up</button></li>
+					</ul>
 				</div>
 			</div>
 		</header>
 
 		<div class="video-block">
-			<div class="row">
-				<div class="flex-video">
-					<!--<iframe width="420" height="315" src="https://www.youtube.com/embed/V9gkYw35Vws" frameborder="0" allowfullscreen></iframe>-->
+			<div class="flex-video">
+				<video  width="660" height="825" poster="http://media.html5book.ru/martynko.png" preload="none">
+					<source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+					<source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+					<source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+				</video>
+				<div class="controls_video">
 				</div>
+				<!--<iframe width="420" height="315" src="https://www.youtube.com/embed/V9gkYw35Vws" frameborder="0" allowfullscreen></iframe>-->
+			</div>
+			<div class="row">
 			</div>
 		</div>
 
@@ -48,33 +54,37 @@
 						<h2 class="text-uppercase section-title">Our Services.</h2>
 					</div>
 					<div class="large-8 columns">
-						<ul class="services-list clearfix row">
-							<li class="services-list-item float-left large-6 columns">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</li>
-							<li class="services-list-item float-left large-6 columns">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</li>
-							<li class="services-list-item float-left large-6 columns">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</li>
-							<li class="services-list-item float-left large-6 columns">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</li>
-						</ul>
+						<!--<div class="row">-->
+							<ul class="services-list row">
+								<li class="services-list-item cloud-platform large-6 columns">
+									<h3 class="text-uppercase service-title">Feature 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+								</li>
+								<li class="services-list-item client-friendly large-6 columns">
+									<h3 class="text-uppercase service-title">Feature 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+								</li>
+								<li class="services-list-item fast large-6 columns">
+									<h3 class="text-uppercase service-title">Feature 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+								</li>
+								<li class="services-list-item legally large-6 columns">
+									<h3 class="text-uppercase service-title">Feature 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+								</li>
+							</ul>
+						<!--</div>-->
 					</div>
 				</div>
 			</div>
 			<div class="all-services">
 				<ul class="row service-list">
-					<li class="large-2 columns">
-						<a href="/"></a>
-					</li>
-					<li class="large-2 columns"><a href="/"></a></li>
-					<li class="large-2 columns"><a href="/"></a></li>
-					<li class="large-2 columns"><a href="/"></a></li>
-					<li class="large-2 columns"><a href="/"></a></li>
-					<li class="large-2 columns"><a href="/"></a></li>
+					<li class="large-2 columns text-center"><a href="/" class="fa fa-lightbulb-o"></a></li>
+					<li class="large-2 columns text-center"><a href="/" class="fa fa-globe"></a></li>
+					<li class="large-2 columns text-center"><a href="/" class="fa fa-camera-retro"></a></li>
+					<li class="large-2 columns text-center"><a href="/" class="fa fa-wrench"></a></li>
+					<li class="large-2 columns text-center"><a href="/" class="fa fa-microphone"></a></li>
+					<li class="large-2 columns text-center"><a href="/" class="fa fa-money"></a></li>
 				</ul>
 			</div>
 
@@ -162,13 +172,21 @@
 			<div class="about-team">
 				<div class="row">
 					<div class="large-4 columns">
-						<h2 class="text-uppercase section-title">Our team.</h2>
+						<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>team</span>.</h2>
 					</div>
 				</div>
 				<div class="row">
 					<ul class="team-member-list">
 						<li class="team-member-item large-4 columns">
-							<img src="" alt="team-member">
+							<div class="social-info">
+								<img src="" alt="team-member">
+								<ul class="team-member-social-link clearfix">
+									<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
+									<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
+									<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
+								</ul>
+							</div>
+
 							<h3 class="text-uppercase">Michael Joe</h3>
 							<h3 class="subheader">CEO & Founder</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
@@ -343,15 +361,15 @@
 				<div class="large-4 columns">
 					<p class="address">123A Building, Road Street, Orlando District, US</p>
 					<p> +01 234 567 89  +01 234 567 89  contact@book.com</p>
-					<ul class="social-link bullet">
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
-						<li class="social-link-item"><a href="/"></a></li>
+					<ul class="social-link clearfix">
+						<li class="social-link-item float-left"><a href="/">1</a></li>
+						<li class="social-link-item float-left"><a href="/">2</a></li>
+						<li class="social-link-item float-left"><a href="/">3</a></li>
+						<li class="social-link-item float-left"><a href="/">4</a></li>
+						<li class="social-link-item float-left"><a href="/">5</a></li>
+						<li class="social-link-item float-left"><a href="/">6</a></li>
+						<li class="social-link-item float-left"><a href="/">7</a></li>
+						<li class="social-link-item float-left"><a href="/">8</a></li>
 					</ul>
 				</div>
 			</div>
@@ -373,11 +391,10 @@
 		<footer>
 			<div class="row">
 				<div class="medium-4 medium-offset-4 columns">
-					<h1 class="text-uppercase text-center logo-text">Iddo</h1>
-					<p class="copy-rights text-center">© 2014 IDDO. All rights resevered.</p>
+					<p class="text-center"><span class="text-uppercase text-center site-title">Iddo</span></p>
+					<p class="copy-rights text-center">&#169; 2014 IDDO. All rights resevered.</p>
 					<p class="author text-center">Designed by <span class="text-uppercase">DZOAN</span></p>
-					<a href="/" class="button up float-center">up</a>
-
+					<p class="text-center"><a href="/" class="button up">up</a></p>
 				</div>
 			</div>
 		</footer>

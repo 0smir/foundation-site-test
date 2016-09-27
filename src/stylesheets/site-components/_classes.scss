@@ -1,0 +1,23 @@
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1.4rem;
+}
+
+.section-title{
+  border-bottom: 1rem solid $dark-gray;
+}
+
+.site-title{
+  font-size: 3rem;
+  font-family: 'Montserrat', 'Helvetica', Arial sans-serif;
+  font-weight: bold;
+  color: $white;
+}
+
+.button {
+  min-width: 9rem;
+}
+

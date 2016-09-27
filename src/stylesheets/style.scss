@@ -1,5 +1,19 @@
+@import "site-components/fonts";
 @import "app";
+@import "site-components/classes";
+@import "site-components/header";
+@import "site-components/services";
+@import "site-components/video";
+@import "site-components/our-works";
+@import "site-components/team";
+@import "site-components/skills";
+@import "site-components/contacts";
+@import "site-components/footer";
 
 body{
   background: antiquewhite;
+}
+
+.row{
+  outline: 1px solid yellow;
 }

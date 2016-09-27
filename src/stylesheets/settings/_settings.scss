@@ -47,18 +47,12 @@
 
 
 // Colors
-$blue: #42b8dd;
-$light-gray: #ebebeb;
-$medium-gray: #666666;
-$dark-gray: #363636;
-$black: #000;
-$white: #fff;
 
-$global-font-size: 16px;
+$global-font-size: 10px;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.5;
+$global-lineheight: 1.2;
 $foundation-palette: (
-  primary: $blue,
+  primary: #2ba6cb,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -70,6 +64,16 @@ $foundation-palette: (
 //$dark-gray: #363636;
 //$black: #000;
 //$white: #fff;
+
+$blue: #42b8dd;
+$light-gray: #ebebeb;
+$medium-gray: #666666;
+$dark-gray: #363636;
+$onyx-gray: #252525;
+$iron-gray: #484848;
+$black: #000;
+$white: #fff;
+
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -112,8 +116,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-family: 'Montserrat', 'Helvetica', Arial sans-serif;
+$header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
@@ -127,15 +131,15 @@ $header-sizes: (
   ),
   medium: (
     'h1': 48,
-    'h2': 40,
-    'h3': 31,
+    'h2': 60,
+    'h3': 18,
     'h4': 25,
     'h5': 20,
     'h6': 16,
   ),
 );
-$header-color: inherit;
-$header-lineheight: 1.4;
+$header-color: $dark-gray;
+$header-lineheight: 1;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
@@ -149,7 +153,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+//$anchor-color: $primary-color;
+$anchor-color: $blue;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -158,12 +163,13 @@ $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
-$list-style-type: disc;
+$list-style-type: none;
 $list-style-position: outside;
 $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
-$defnlist-term-weight: $global-weight-bold;
+//$defnlist-term-weight: $global-weight-bold;
+$defnlist-term-weight: $global-weight-normal;
 $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
@@ -243,7 +249,8 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+//$button-padding: 0.85em 1em;
+$button-padding: 0.9rem;
 //$button-margin: 0 0 $global-margin 0;
 $button-margin: 0;
 $button-fill: solid;
@@ -251,11 +258,12 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+//$button-radius: $global-radius;
+$button-radius: 10px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 1.6rem,
   large: 1.25rem,
 );
 $button-opacity-disabled: 0.25;
@@ -569,8 +577,9 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+//$topbar-padding: 0.5rem;
+$topbar-padding: 0;
+$topbar-background: $black;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
