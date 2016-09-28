@@ -1,3 +1,22 @@
-.our-works{
+.our-works {
   background: $light-gray;
+  padding: 10rem 0 14rem 0;
+}
+
+.work-list {
+  .work-list-item{
+    margin-bottom: 3rem;
+  }
+  .work {
+    overflow: hidden;
+    position: relative;
+    height: 37rem;
+    border: 1px solid red;
+    text-align: center;
+
+    img{
+      height: 370px;
+      min-width: 100%;
+    }
+  }
 }
