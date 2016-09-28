@@ -70,6 +70,7 @@ $light-gray: #ebebeb;
 $medium-gray: #666666;
 $dark-gray: #363636;
 $onyx-gray: #252525;
+$iron-gray: #898989;
 $iron-gray: #484848;
 $black: #000;
 $white: #fff;
@@ -82,6 +83,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
+$global-weight-lighter: lighter;
 $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
@@ -116,7 +118,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Montserrat', 'Helvetica', Arial sans-serif;
+$header-font-family: 'ProximaNova', 'Helvetica', Arial sans-serif;
 $header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -131,7 +133,7 @@ $header-sizes: (
   ),
   medium: (
     'h1': 48,
-    'h2': 60,
+    'h2': 72,
     'h3': 18,
     'h4': 25,
     'h5': 20,
@@ -189,11 +191,11 @@ $abbr-underline: 1px dotted $black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: $iron-gray;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
-$stat-font-size: 2.5rem;
+$stat-font-size: 7.2rem;
 
 // 6. Abide
 // --------
@@ -271,7 +273,7 @@ $button-opacity-disabled: 0.25;
 // 12. Button Group
 // ----------------
 
-$buttongroup-margin: 1rem;
+$buttongroup-margin: 6rem;
 $buttongroup-spacing: 1px;
 $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
