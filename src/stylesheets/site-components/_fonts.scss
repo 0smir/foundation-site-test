@@ -1,1 +1,31 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+//@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url('../../fonts/ProximaNova/Bold/ProximaNovaBold.eot');
+  src: url('../../fonts/ProximaNova/Bold/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/ProximaNova/Bold/ProximaNovaBold.woff') format('woff'),
+  url('../../fonts/ProximaNova/Bold/ProximaNovaBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url('../../fonts/ProximaNova/Normal/ProximaNovaNormal.eot');
+  src: url('../../fonts/ProximaNova/Normal/ProximaNovaNormal.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/ProximaNova/Normal/ProximaNovaNormal.woff') format('woff'),
+  url('../../fonts/ProximaNova/Normal/ProximaNovaNormal.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url('../../fonts/ProximaNova/Thin/ProximaNovaThin.eot');
+  src: url('../../fonts/ProximaNova/Thin/ProximaNovaThin.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/ProximaNova/Thin/ProximaNovaThin.woff') format('woff'),
+  url('../../fonts/ProximaNova/Thin/ProximaNovaThin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: lighter;
+}
