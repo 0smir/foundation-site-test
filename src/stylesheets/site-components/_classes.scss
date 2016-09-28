@@ -12,12 +12,16 @@ p{
 
 .site-title{
   font-size: 3rem;
-  font-family: 'Montserrat', 'Helvetica', Arial sans-serif;
+  font-family: $header-font-family;
   font-weight: bold;
   color: $white;
 }
 
 .button {
   min-width: 9rem;
+}
+
+.round{
+  border-radius: 50%;
 }
 
