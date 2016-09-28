@@ -63,7 +63,7 @@ gulp.task('js', function () {
 
 //fonts
 gulp.task('fonts', function () {
-  gulp.src('src/fonts/*.*')
+  gulp.src('src/fonts/**/*.*')
       .pipe(gulp.dest('dist/fonts'))
       .pipe(browserSync.stream());
 });

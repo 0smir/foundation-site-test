@@ -137,6 +137,12 @@ $menu-icon-spacing: 0.25rem !default;
 
   a {
     padding: 0;
+    color: $white;//
+  }
+
+  a:hover,
+  a:active{
+    color: $anchor-color;//
   }
 }
 
