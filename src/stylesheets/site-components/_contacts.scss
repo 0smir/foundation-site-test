@@ -1,3 +1,48 @@
- .contact-us{
+ .contact-us {
    background: $light-gray;
+   padding: 10rem 0 11rem 0;
+
+   .section-title {
+     margin-bottom: 4rem;
+   }
+
+   .contacts {
+     color: $silver-gray;
+     font: 1.5rem/1.8 "Helvetica", Arial sans-serif;
+   }
+
+   input,
+   textarea {
+     font-weight: bold;
+     text-transform: uppercase;
+     position: relative;
+     @include placeholder($dark-gray);
+   }
+
+   textarea {
+     height: 80px;
+   }
+
+   .social-link{
+     margin: 2.5rem 0 5rem 0;
+     .social-link-item {
+       margin-right: 1.5rem;
+       a{
+         font-size: 1.6rem;
+       }
+     }
+   }
+
+   .send-form {
+     height: 8rem;
+
+     .icon {
+       font-size: 3.6rem;
+       margin-right: 1rem;
+     }
+
+     span {
+       vertical-align: middle;
+     }
+   }
  }

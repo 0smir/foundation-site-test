@@ -10,12 +10,14 @@ header{
   }
 
   .menu{
-    font-size: 1.6rem;
     line-height: 80px;
     height: 80px;
     vertical-align: middle;
   }
 
-
+  .main-nav{
+    font-size: 1.6rem;
+    @include custom-menu-simple;
+  }
 }
 

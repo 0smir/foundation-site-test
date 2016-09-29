@@ -1,6 +1,11 @@
 .our-works {
   background: $light-gray;
   padding: 10rem 0 14rem 0;
+
+  .section-title{
+    margin-bottom: 2.8rem;
+  }
+
 }
 
 .work-list {
@@ -10,6 +15,7 @@
   .work {
     overflow: hidden;
     position: relative;
+    width: 37rem;
     height: 37rem;
     border: 1px solid red;
     text-align: center;

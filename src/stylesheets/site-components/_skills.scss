@@ -1,3 +1,31 @@
-.our-skills{
+.our-skills {
   background: $white;
+  padding: 10rem 0 13rem 0;
+
+  .section-title {
+    margin-bottom: 8rem;
+  }
 }
+
+
+.skill-list {
+   font-weight: bold;
+
+   .skill-list-item{
+     @include custom-accordion-item;
+
+     .accordion-title::before{
+       right: 2rem;
+       top: auto;
+       margin-top: 0;
+     }
+
+     .skill-title{
+       @include custom-accordion-title;
+     }
+   }
+
+   .icon{
+     margin-right: 1.5rem;
+   }
+ }
