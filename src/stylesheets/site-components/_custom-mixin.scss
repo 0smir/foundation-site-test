@@ -1,0 +1,37 @@
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {color: $color}
+  :-moz-placeholder           {color: $color}
+  ::-moz-placeholder          {color: $color}
+  :-ms-input-placeholder      {color: $color}
+}
+
+@mixin custom-accordion-item {
+  &:nth-child(n) {
+    margin-bottom: 1rem;
+  }
+}
+
+@mixin custom-accordion-title {
+  line-height: 1.571;
+
+  &:nth-child(n){
+    padding: 1.2rem 2rem;
+    border-radius: $button-radius;
+    border-bottom: 1px solid $light-gray;
+    font-size: 1.6rem;
+  }
+}
+
+@mixin custom-menu-simple {
+
+  a {
+    padding: 0;
+    color: $white;
+  }
+
+  a:hover,
+  a:active{
+    color: $anchor-color;
+  }
+
+}
