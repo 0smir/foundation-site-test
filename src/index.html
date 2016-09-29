@@ -98,9 +98,9 @@
 			<div class="row">
 				<div class="large-4 columns">
 					<div class="button-group">
-						<button class="button">All</button>
-						<button class="button">Website</button>
-						<button class="button">Branding</button>
+						<a href="/" class="button hollow">All</a>
+						<a href="/" class="button hollow">Website</a>
+						<a href="/" class="button hollow">Branding</a>
 					</div>
 				</div>
 			</div>
@@ -258,7 +258,7 @@
 		<div class="our-skills">
 			<div class="row">
 				<div class="large-4 columns">
-					<h2 class="text-uppercase section-title">Our skills.</h2>
+					<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>skills</span>.</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -281,39 +281,39 @@
 					</div>
 				</div>
 				<div class="large-4 columns">
-					<ul class="accordion" data-accordion>
-						<li class="accordion-item is-active" data-accordion-item>
-							<a href="#" class="accordion-title">Totam rem aperiam eaque</a>
+					<ul class="accordion skill-list" data-accordion>
+						<li class="accordion-item skill-list-item is-active" data-accordion-item>
+							<a href="#" class="accordion-title skill-title"><span class="icon">&#xf135;</span> Totam rem aperiam eaque</a>
 							<div class="accordion-content" data-tab-content>
 								I would start in the open state, due to using the `is-active` state class.
 							</div>
 						</li>
-						<li class="accordion-item">
-							<a href="#" class="accordion-title" data-accordion-item>Nemo enim ipsam voluptatem</a>
+						<li class="accordion-item skill-list-item">
+							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf13e;</span> Nemo enim ipsam voluptatem</a>
 							<div class="accordion-content" data-tab-content>
 								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
 									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
 							</div>
 						</li>
-						<li class="accordion-item">
-							<a href="#" class="accordion-title" data-accordion-item>Ut enim ad minima veniam</a>
+						<li class="accordion-item skill-list-item">
+							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf124;</span> Ut enim ad minima veniam</a>
 							<div class="accordion-content" data-tab-content>
 								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
 									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
 							</div>
 						</li>
-						<li class="accordion-item">
-							<a href="#" class="accordion-title" data-accordion-item>Quis nostrum exercitationem ullam</a>
+						<li class="accordion-item skill-list-item">
+							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf095;</span> Quis nostrum exercitationem ullam</a>
 							<div class="accordion-content" data-tab-content>
 								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
 									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
 							</div>
 						</li>
-						<li class="accordion-item">
-							<a href="#" class="accordion-title" data-accordion-item>Neque porro quisquam est qui</a>
+						<li class="accordion-item skill-list-item">
+							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf02d;</span> Neque porro quisquam est qui</a>
 							<div class="accordion-content" data-tab-content>
 								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
@@ -328,7 +328,7 @@
 		<div class="subscribe">
 			<div class="row">
 				<div class="large-4 columns large-offset-3">
-					<p class="lead subscribe-description">Enter your e-mail here...</p>
+					<p class="subscribe-description">Enter your e-mail here...</p>
 				</div>
 				<div class="large-2 columns end">
 					<button class="button float-right">Subscribe</button>
@@ -353,31 +353,36 @@
 			</div>
 			<div class="row">
 				<div class="large-4 columns">
-					<p class="address">123A Building, Road Street, Orlando District, US</p>
-					<p> +01 234 567 89  +01 234 567 89  contact@book.com</p>
+					<p class="contacts address">123A Building, Road Street, Orlando District, US</p>
+					<p class="contacts">
+						<span class="phone">+01 234 567 89 - +01 234 567 89</span><span class="contact-mail">contact@book.com</span>
+					</p>
 					<ul class="social-link clearfix">
-						<li class="social-link-item float-left"><a href="/">1</a></li>
-						<li class="social-link-item float-left"><a href="/">2</a></li>
-						<li class="social-link-item float-left"><a href="/">3</a></li>
-						<li class="social-link-item float-left"><a href="/">4</a></li>
-						<li class="social-link-item float-left"><a href="/">5</a></li>
-						<li class="social-link-item float-left"><a href="/">6</a></li>
-						<li class="social-link-item float-left"><a href="/">7</a></li>
-						<li class="social-link-item float-left"><a href="/">8</a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-twitter"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-facebook"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-google-plus-square"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-pinterest"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-instagram"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-youtube-play"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-skype"></a></li>
+						<li class="social-link-item float-left"><a href="/" class="fa fa-globe"></a></li>
 					</ul>
 				</div>
 			</div>
 			<form action="#" method="post">
 				<div class="row">
-					<div class="medium-4 columns"><input type="email" placeholder="email"></div>
-					<div class="medium-4 columns end"><input type="text" placeholder="name"></div>
+					<div class="medium-4 columns">
+						<input id="user-mail" type="email" placeholder="&#xf0e0; email"></div>
+					<div class="medium-4 columns end">
+						<input id="user-name" type="text" placeholder="&#xf007; name">
+					</div>
 				</div>
 				<div class="row">
 					<div class="medium-8 columns">
-						<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+						<textarea name="message" id="user-message" cols="30" rows="10" placeholder="&#xf040; Message"></textarea>
 					</div>
 					<div class="medium-4 columns">
-						<button class="button expanded" type="submit">Submit</button>
+						<button class="send-form button expanded" type="submit"><span class="icon">&#xf05d;</span><span>Submit</span></button>
 					</div>
 				</div>
 			</form>
@@ -386,7 +391,7 @@
 			<div class="row">
 				<div class="medium-4 medium-offset-4 columns">
 					<p class="text-center"><span class="text-uppercase text-center site-title">Iddo</span></p>
-					<p class="copy-rights text-center">&#169; 2014 IDDO. All rights resevered.</p>
+					<p class="copy-rights text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2014 IDDO. All rights resevered.</p>
 					<p class="author text-center">Designed by <span class="text-uppercase">DZOAN</span></p>
 					<p class="text-center"><a href="/" class="button up">up</a></p>
 				</div>
