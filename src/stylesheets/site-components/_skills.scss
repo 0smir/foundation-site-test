@@ -5,6 +5,11 @@
   .section-title {
     margin-bottom: 8rem;
   }
+
+  .article-title{
+    color: $primary-color;
+    margin-bottom: 2.5rem;
+  }
 }
 
 
@@ -29,3 +34,63 @@
      margin-right: 1.5rem;
    }
  }
+
+.skill-diagram{
+  margin-bottom: 4rem;
+
+  .diagram{
+    position: relative;
+    border: 1rem solid $primary-color;
+    height: 17rem;
+    width: 17rem;
+    @extend .round;
+  }
+
+  .diagram.half-diagram{
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    transform: rotate(-45deg);
+  }
+
+  .diagram.quarter{
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    transform: rotate(45deg);
+  }
+
+  .diagram.three-quarter{
+    border-left: 1rem solid transparent;
+    transform: rotate(45deg);
+  }
+
+  .half-diagram::before,
+  .quarter::before,
+  .three-quarter::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.9rem;
+    margin-left: -0.9rem;
+    font-size: 1.8rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .half-diagram::before{
+    content: '50';
+    transform: rotate(45deg);
+  }
+
+  .quarter::before{
+    content: '25';
+    transform: rotate(-45deg);
+  }
+
+  .three-quarter::before{
+    content: '75';
+    transform: rotate(-45deg);
+  }
+
+
+}
