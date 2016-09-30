@@ -167,7 +167,7 @@ $hr-width: $global-width;
 $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
-$list-margin-bottom: $paragraph-margin-bottom;
+$list-margin-bottom: 0;
 $list-style-type: none;
 $list-style-position: outside;
 //$list-side-margin: 1.25rem;
@@ -280,7 +280,7 @@ $button-opacity-disabled: 0.25;
 // ----------------
 
 $buttongroup-margin: 6rem;
-$buttongroup-spacing: 1px;
+$buttongroup-spacing: 1rem;
 $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
 

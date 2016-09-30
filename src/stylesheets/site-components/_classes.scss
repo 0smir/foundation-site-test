@@ -17,11 +17,26 @@ p{
   color: $white;
 }
 
-.button {
+.button.default {
   min-width: 9rem;
 }
 
 .round{
   border-radius: 50%;
 }
+
+.button.hollow{
+  @include custom-button-hollow-style;
+}
+
+.button.more{
+  @include more;
+  height: 3.1rem;
+  width: 3.1rem;
+  line-height: 3.1rem;
+
+  @extend .round;
+}
+
+
 
