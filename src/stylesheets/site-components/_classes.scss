@@ -1,16 +1,16 @@
-.text-uppercase{
+.text-uppercase {
   text-transform: uppercase;
 }
 
-p{
+p {
   font-size: 1.4rem;
 }
 
-.section-title{
+.section-title {
   border-bottom: 1rem solid $dark-gray;
 }
 
-.site-title{
+.site-title {
   font-size: 3rem;
   font-family: $header-font-family;
   font-weight: bold;
@@ -21,22 +21,27 @@ p{
   min-width: 9rem;
 }
 
-.round{
+.round {
   border-radius: 50%;
 }
 
-.button.hollow{
+.button.hollow {
   @include custom-button-hollow-style;
 }
 
-.button.more{
+.button.more {
   @include more;
   height: 3.1rem;
   width: 3.1rem;
   line-height: 3.1rem;
-
   @extend .round;
 }
+
+.button.scroll-up {
+   background: transparent;
+   font-size: 3.6rem;
+   padding: 0;
+ }
 
 
 
