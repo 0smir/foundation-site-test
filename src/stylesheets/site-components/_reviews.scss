@@ -1,0 +1,37 @@
+.reviews{
+  background-color: $medium-gray;
+
+  .user-review{
+    width: 80rem;
+    margin: 0 auto;
+    outline: 1px solid red;
+  }
+
+  .text-review,
+  .client-name{
+    color: $white;
+    font-family: "ProximaNova", "Helvetica", Arial sans-serif;
+  }
+
+  .text-review{
+    font-size: 3.6rem;
+  }
+
+  .user-photo{
+    height: 7rem;
+    width: 7rem;
+    @extend .round;
+  }
+
+
+  blockquote {
+    margin: 0 auto;
+    padding: $blockquote-padding;
+    border-#{$global-left}: $blockquote-border;
+
+    &, p {
+      line-height: $paragraph-lineheight;
+      color: $blockquote-color;
+    }
+  }
+}
