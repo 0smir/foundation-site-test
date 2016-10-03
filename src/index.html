@@ -31,23 +31,22 @@
 				</div>
 			</div>
 		</header>
-
 		<div class="video-block">
-			<div class="flex-video">
-				<!--<video  poster="http://media.html5book.ru/martynko.png" preload="none">-->
-				<video preload="none">
-					<source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
-					<source src="http://media.html5book.ru/martynko.webm" type="video/webm">
-					<source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
-				</video>
-				<div class="controls_video">
+			<video preload="auto" id="bgvideo">
+				<source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+				<source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+				<source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+			</video>
+			<div class="controls-video">
+				<div class="row">
+					<div class="medium-12 columns controls-video-content">
+						<button class="button play fa fa-play-circle-o"></button>
+						<h2 class="section-title video-title">Let me show you a few things.</h2>
+						<p class="controls_video-description">Click to play video</p>
+					</div>
 				</div>
-				<!--<iframe width="420" height="315" src="https://www.youtube.com/embed/V9gkYw35Vws" frameborder="0" allowfullscreen></iframe>-->
-			</div>
-			<div class="row">
 			</div>
 		</div>
-
 		<div class="services">
 			<div class="about-services">
 				<div class="row">
@@ -409,7 +408,8 @@
 			</div>
 		</footer>
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/video-play.js"></script>
 </body>
 </html>

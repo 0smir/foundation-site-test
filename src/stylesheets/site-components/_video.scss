@@ -1,3 +1,83 @@
-.video-block{
+.video-block {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  height: 82rem;
+  max-height: 82rem;
+  min-height: 26rem;
+  margin-top: 8rem;
+}
+
+video{
+  display: block;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  perspective: 1000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  z-index: -1;
+  backface-visibility: hidden;
+  background-size: cover;
+  bottom: 0;
+}
+
+
+
+
+
+.controls-video {
+  position: relative;
+  padding-top: 30rem;
+  height: 82rem;
   background: $medium-gray;
+  max-height: 82rem;
+  .controls-video-content{
+    position: relative;
+  }
+
+  .button.play {
+    height: 12.8rem;
+    width: 12.8rem;
+    @extend .round;
+    font-size: 15rem;
+    line-height: 12.8rem;
+    color: $white;
+    background: transparent;
+    padding: 0;
+    position: absolute;
+    top: 0;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  .section-title {
+    color: $white;
+    border-bottom: none;
+    padding-top: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .video-title {
+    font-weight: lighter;
+  }
+
+  .section-title,
+  .controls_video-description {
+    padding-left: 17rem;
+  }
+
+  .controls_video-description {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: $primary-color;
+  }
+
 }
