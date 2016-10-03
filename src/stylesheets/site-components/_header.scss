@@ -1,21 +1,26 @@
-header{
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   background: $black;
 
   
-  .site-title{
+  .site-title {
     color: $white;
     line-height: 80px;
     height: 80px;
     vertical-align: middle;
   }
 
-  .menu{
+  .menu {
     line-height: 80px;
     height: 80px;
     vertical-align: middle;
   }
 
-  .main-nav{
+  .main-nav {
     font-size: 1.6rem;
     @include custom-menu-simple;
   }
