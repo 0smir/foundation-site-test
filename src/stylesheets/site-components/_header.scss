@@ -5,6 +5,7 @@ header {
   z-index: 1000;
   width: 100%;
   background: $black;
+  outline: 1px solid red;
 
   
   .site-title {
@@ -18,11 +19,15 @@ header {
     line-height: 80px;
     height: 80px;
     vertical-align: middle;
+    @include custom-menu-simple;
+  }
+
+  .menu.simple li{
+    margin-right: 3.7rem;
   }
 
   .main-nav {
     font-size: 1.6rem;
-    @include custom-menu-simple;
   }
 
 }
