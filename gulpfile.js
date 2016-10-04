@@ -68,6 +68,12 @@ gulp.task('fonts', function () {
       .pipe(browserSync.stream());
 });
 
+// video
+gulp.task('video', function () {
+  gulp.src('src/video/**/*.*')
+      .pipe(gulp.dest('dist/video'))
+      .pipe(browserSync.stream());
+})
 
 // clean
 gulp.task('clean', function() {
@@ -82,7 +88,8 @@ gulp.task('watch', function () {
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch('src/img/**', ['img']);
   gulp.watch('src/fonts/**', ['fonts']);
+  gulp.watch('src/video/**/*.*', ['video']);
 });
 
 //default
-gulp.task('default', [ 'browser-sync', 'html', 'css', 'img', 'js', 'fonts', 'watch']);
+gulp.task('default', [ 'browser-sync', 'html', 'css', 'img', 'js', 'fonts', 'video', 'watch']);
