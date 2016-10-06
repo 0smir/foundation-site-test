@@ -12,10 +12,10 @@
 	<div class="page">
 		<header>
 			<div class="row">
-				<div class="medium-2 columns">
+				<div class="small-6 medium-2 columns">
 					<span class="site-title text-uppercase">Iddo</span>
 				</div>
-				<div class="top-bar-left medium-8 columns">
+				<div class="top-bar-left show-for-large large-8 columns">
 					<ul class="menu main-nav simple">
 						<li class="menu-item"><a href="#">Home</a></li>
 						<li class="menu-item"><a href="#">Services</a></li>
@@ -24,20 +24,21 @@
 						<li class="menu-item"><a href="#">Contact</a></li>
 					</ul>
 				</div>
-				<div class="top-bar-right medium-2 columns">
+				<div class="top-bar-right small-6 medium-2 columns">
 					<ul class="menu align-right">
-						<li><button class="button hollow default">Sing up</button></li>
+						<li class="show-for-large"><button class="button hollow default">Sing up</button></li>
+						<li class="hide-for-large"><button class="button hollow mobile-nav fa fa-bars"></button></li>
 					</ul>
 				</div>
 			</div>
 		</header>
-		<div class="video-block">
+		<div class="video-block hide-for-small-only">
 			<video preload="auto" muted id="bgvideo">
 				<source src="video/apple-iPhone 7.mp4" type="video/mp4">
 			</video>
 			<div class="controls-video">
 				<div class="row">
-					<div class="medium-12 columns controls-video-content">
+					<div class="small-12 columns controls-video-content">
 						<button class="button play fa fa-play-circle-o"></button>
 						<div class="wrapper_title">
 							<h2 class="section-title video-title">Let me show you a few things.</h2>
@@ -50,41 +51,39 @@
 		<div class="services">
 			<div class="about-services">
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="small-12 large-4 columns">
 						<h2 class="text-uppercase section-title">Our Services.</h2>
 					</div>
-					<div class="large-8 columns">
-						<!--<div class="row">-->
-							<ul class="services-list row">
-								<li class="services-list-item cloud-platform large-6 columns">
-									<h3 class="text-uppercase service-title">Feature 1</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-								</li>
-								<li class="services-list-item client-friendly large-6 columns">
-									<h3 class="text-uppercase service-title">Feature 2</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-								</li>
-								<li class="services-list-item fast large-6 columns">
-									<h3 class="text-uppercase service-title">Feature 3</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-								</li>
-								<li class="services-list-item legally large-6 columns">
-									<h3 class="text-uppercase service-title">Feature 4</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-								</li>
-							</ul>
-						<!--</div>-->
+					<div class="small-12 large-8 columns">
+						<ul class="services-list row">
+							<li class="services-list-item cloud-platform small-12 medium-6 large-6 columns">
+								<h3 class="text-uppercase service-title">Feature 1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+							</li>
+							<li class="services-list-item client-friendly small-12 medium-6 large-6 columns">
+								<h3 class="text-uppercase service-title">Feature 2</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+							</li>
+							<li class="services-list-item fast small-12 medium-6 large-6 columns">
+								<h3 class="text-uppercase service-title">Feature 3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+							</li>
+							<li class="services-list-item legally small-12 medium-6 large-6 columns">
+								<h3 class="text-uppercase service-title">Feature 4</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="all-services">
 				<ul class="row service-list">
-					<li class="large-2 columns text-center"><a href="/" class="fa fa-lightbulb-o"></a></li>
-					<li class="large-2 columns text-center"><a href="/" class="fa fa-globe"></a></li>
-					<li class="large-2 columns text-center"><a href="/" class="fa fa-camera-retro"></a></li>
-					<li class="large-2 columns text-center"><a href="/" class="fa fa-wrench"></a></li>
-					<li class="large-2 columns text-center"><a href="/" class="fa fa-microphone"></a></li>
-					<li class="large-2 columns text-center"><a href="/" class="fa fa-money"></a></li>
+					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-lightbulb-o"></a></li>
+					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-globe"></a></li>
+					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-camera-retro"></a></li>
+					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-wrench"></a></li>
+					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-microphone"></a></li>
+					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-money"></a></li>
 				</ul>
 			</div>
 
@@ -105,12 +104,12 @@
 				</div>
 			</div>
 			<ul class="row work-list">
-				<li class="work-list-item work-example large-4 columns"><div class="work"><img src="images/works/work1.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example large-4 columns"><div class="work"><img src="images/works/work2.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example large-4 columns"><div class="work"><img src="images/works/work3.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example large-4 columns"><div class="work"><img src="images/works/work4.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example large-4 columns"><div class="work"><img src="images/works/work5.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example large-4 columns"><div class="work"><img src="images/works/work6.jpg" alt="work"></div></li>
+				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work1.jpg" alt="work"></div></li>
+				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work2.jpg" alt="work"></div></li>
+				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work1.jpg" alt="work"></div></li>
+				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work4.jpg" alt="work"></div></li>
+				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work5.jpg" alt="work"></div></li>
+				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work6.jpg" alt="work"></div></li>
 			</ul>
 			<div class="row">
 				<div class="columns">
@@ -172,7 +171,7 @@
 		<div class="our-team">
 			<div class="about-team">
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="small-12 large-4 columns">
 						<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>team</span>.</h2>
 					</div>
 				</div>
@@ -231,22 +230,22 @@
 			</div>
 			<div class="team-achievements">
 				<ul class="row achievements-list">
-					<li class="large-3 columns">
+					<li class="medium-3 large-3 columns">
 						<div class="icon text-center"><i class="fa fa-gift" aria-hidden="true"></i></div>
 						<div class="stat text-center">2009</div>
 						<h3 class="text-uppercase text-center achievement-description">Perspiciatis</h3>
 					</li>
-					<li class="large-3 columns">
+					<li class="medium-3 large-3 columns">
 						<div class="icon text-center"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
 						<div class="stat text-center">13,562</div>
 						<h3 class="text-uppercase text-center achievement-description">Comments</h3>
 					</li>
-					<li class="large-3 columns">
+					<li class="medium-3 large-3 columns">
 						<div class="icon text-center"><i class="fa fa-coffee" aria-hidden="true"></i></div>
 						<div class="stat text-center">8,710</div>
 						<h3 class="text-uppercase text-center achievement-description">Coffee cups</h3>
 					</li>
-					<li class="large-3 columns">
+					<li class="medium-3 large-3 columns">
 						<div class="icon text-center"><i class="fa fa-trophy" aria-hidden="true"></i></div>
 						<div class="stat text-center">715</div>
 						<h3 class="text-uppercase text-center achievement-description">Awards</h3>
@@ -262,17 +261,17 @@
 			</div>
 			<div class="row">
 				<div class="large-8 columns">
-					<div class="row skill-diagram">
-						<div class="large-3 columns">
+					<div class="row skill-diagram hide-for-small-only">
+						<div class="medium-3 large-3 columns">
 							<div class="diagram three-quarter"></div>
 						</div>
-						<div class="large-3 columns">
+						<div class="medium-3 large-3 columns">
 							<div class="diagram quarter"></div>
 						</div>
-						<div class="large-3 columns">
+						<div class="medium-3 large-3 columns">
 							<div class="diagram three-quarter"></div>
 						</div>
-						<div class="large-3 columns">
+						<div class="medium-3 large-3 columns">
 							<div class="diagram half-diagram"></div>
 						</div>
 					</div>
@@ -331,7 +330,6 @@
 							</div>
 						</li>
 					</ul>
-					
 				</div>
 			</div><!--end about-our-skills-->
 		</div>
