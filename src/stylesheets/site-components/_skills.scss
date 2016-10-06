@@ -44,6 +44,10 @@
     height: 17rem;
     width: 17rem;
     @extend .round;
+    @include custom-breakpoint(medium){
+      height: 12rem;
+      width: 12rem;
+    }
   }
 
   .diagram.half-diagram{

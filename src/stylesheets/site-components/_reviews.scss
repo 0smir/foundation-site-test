@@ -2,7 +2,7 @@
   background-color: $medium-gray;
 
   .user-review{
-    width: 80rem;
+    max-width: 80rem;
     margin: 0 auto;
     outline: 1px solid red;
   }
@@ -14,7 +14,14 @@
   }
 
   .text-review{
-    font-size: 3.6rem;
+    font-size: 1.8rem;
+
+    @include custom-breakpoint(medium){
+      font-size: 3rem;
+    }
+    @include custom-breakpoint(large){
+      font-size: 3.6rem;
+    }
   }
 
   .user-photo{
