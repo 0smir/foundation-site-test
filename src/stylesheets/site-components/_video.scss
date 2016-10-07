@@ -26,20 +26,31 @@ video{
 
   .controls-video-content{
     position: relative;
-    top: 30rem;
+    top: 12rem;
+    @include custom-breakpoint(large){
+      top: 20rem;
+    }
+    @include custom-breakpoint(xlarge){
+      top: 30rem;
+    }
   }
 
   .button.play {
     float: left;
-    height: 12.8rem;
-    width: 12.8rem;
-    @extend .round;
-    font-size: 15rem;
-    line-height: 12.8rem;
+    height: 10rem;
+    width: 10rem;
+    padding: 0;
+    font-size: 10rem;
+    line-height: 10rem;
     color: $white;
     background: transparent;
-    padding: 0;
-
+    @extend .round;
+    @include custom-breakpoint(xlarge){
+      height: 12.8rem;
+      width: 12.8rem;
+      font-size: 15rem;
+      line-height: 12.8rem;
+    }
     &:hover,
     &:focus {
       color: $primary-color;
@@ -55,6 +66,13 @@ video{
 
   .video-title {
     font-weight: lighter;
+    font-size: 3.8rem;
+    @include  custom-breakpoint(large){
+      font-size: 4.8rem;
+    }
+    @include custom-breakpoint(xlarge){
+      font-size: 7.2rem;
+    }
   }
 
   .section-title,

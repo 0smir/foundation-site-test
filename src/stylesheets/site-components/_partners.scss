@@ -4,12 +4,15 @@
 }
 
 .partners-list{
-
-  a{
+    a{
     display: block;
     background: #a6a6a6;
     text-align: center;
     padding: 2.8rem 0;
+    margin: 0 0 3rem 0;
+    @include custom-breakpoint(large){
+      margin-bottom: auto;
+    }
   }
 
 }

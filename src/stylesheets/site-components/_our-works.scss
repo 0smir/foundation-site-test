@@ -15,13 +15,16 @@
   .work {
     overflow: hidden;
     position: relative;
-    width: 37rem;
-    height: 37rem;
+    max-width: 37rem;
+    max-height: 37rem;
     border: 1px solid red;
     text-align: center;
+    margin: 0 auto;
 
     img{
-      height: 370px;
+      display: block;
+      height: auto;
+      min-height: 24rem;
       min-width: 100%;
     }
   }
