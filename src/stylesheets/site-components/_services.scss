@@ -24,7 +24,10 @@
   .services-list-item {
     position: relative;
     margin-bottom: 3rem;
-    padding: 1rem 1.5rem 0 14.5rem;
+    padding: 1rem 1.5rem 0 10rem;
+    @include custom-breakpoint(large){
+      padding: 1rem 1.5rem 0 14.5rem;
+    }
 
     .service-title {
       line-height: 1.875
@@ -63,13 +66,19 @@
     color: $white;
     border: 2px solid $white;
     border-radius: 50%;
-    height: 10rem;
-    line-height: 10rem;
-    width: 10rem;
     text-align: center;
     position: absolute;
     top: 0;
     left: 1.5rem;
+    height: 7rem;
+    line-height: 7rem;
+    width: 7rem;
+
+    @include custom-breakpoint(large){
+      height: 10rem;
+      line-height: 10rem;
+      width: 10rem;
+    }
   }
 }
 

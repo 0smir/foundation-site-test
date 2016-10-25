@@ -1,7 +1,9 @@
  .contact-us {
    background: $light-gray;
-   padding: 10rem 0 11rem 0;
-
+   padding: 5rem 0 5rem 0;
+   @include custom-breakpoint(large){
+     padding: 10rem 0 11rem 0;
+   }
    .section-title {
      margin-bottom: 4rem;
    }
@@ -26,8 +28,22 @@
    .social-link{
      margin: 2.5rem 0 5rem 0;
      .social-link-item {
-       margin-right: 1.5rem;
-       a{
+       //margin-right: 1.5rem;
+       width: 25%;
+       text-align: center;
+       margin: 0 0 3rem 0;
+       @include custom-breakpoint(medium){
+         width: 12.5%;
+       }
+       @include custom-breakpoint(large){
+         width: auto;
+         margin: 0 1.5rem 0 0;
+       }
+     }
+
+     a{
+       font-size: 3rem;
+       @include custom-breakpoint(large){
          font-size: 1.6rem;
        }
      }
