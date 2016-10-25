@@ -29,6 +29,13 @@
        @include custom-accordion-title;
      }
    }
+  .accordion-content{
+    border: none;
+  }
+
+  .skills-description{
+    font-weight: normal;
+  }
 
    .icon{
      margin-right: 1.5rem;
@@ -95,6 +102,4 @@
     content: '75';
     transform: rotate(-45deg);
   }
-
-
 }
