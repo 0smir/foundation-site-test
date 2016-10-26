@@ -1,7 +1,7 @@
 .off-canvas.position-right{
   bottom: 0;
   .off-canvas-title{
-    padding: 1rem 0;
+    padding: 1.5rem 0 0;
     margin: 0;
   }
   .close-button{
@@ -15,10 +15,13 @@
 }
 
 .off-canvas-menu{
-  padding: 4rem 0 0 0;
+  padding: 2rem 0 0 0;
   .off-canvas-menu-item{
     font-size: 1.8rem;
     padding: 1.2rem 3rem;
     border-bottom: 1px solid $cloud-gray;
+  }
+  .off-canvas-menu-item:first-child{
+    border-top: 1px solid $cloud-gray;
   }
 }
