@@ -10,121 +10,134 @@
 	<script src="https://use.fontawesome.com/99d40ab52a.js"></script>
 </head>
 <body>
-	<div class="page">
-		<header>
-			<div class="row">
-				<div class="small-6 medium-2 columns">
-					<span class="site-title text-uppercase">Iddo</span>
-				</div>
-				<div class="top-bar-left show-for-large large-8 columns">
-					<ul class="menu main-nav simple">
-						<li class="menu-item"><a href="#">Home</a></li>
-						<li class="menu-item"><a href="#">Services</a></li>
-						<li class="menu-item"><a href="#">Portfolio</a></li>
-						<li class="menu-item"><a href="#">About</a></li>
-						<li class="menu-item"><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="top-bar-right small-6 medium-2 columns">
-					<ul class="menu align-right">
-						<li class="show-for-large"><button class="button hollow default">Sing up</button></li>
-						<li class="hide-for-large"><button class="button hollow mobile-nav fa fa-bars"></button></li>
-					</ul>
-				</div>
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+			<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+				<button class="close-button" aria-label="Close menu" type="button" data-close>
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<ul class="vertical menu off-canvas-menu">
+				<li class="off-canvas-menu-item"><a href="#">Home</a></li>
+				<li class="off-canvas-menu-item"><a href="#">Services</a></li>
+				<li class="off-canvas-menu-item"><a href="#">Portfolio</a></li>
+				<li class="off-canvas-menu-item"><a href="#">About</a></li>
+				<li class="off-canvas-menu-item"><a href="#">Contact</a></li>
+				</ul>
 			</div>
-		</header>
-		<div class="video-block hide-for-small-only">
-			<video preload="auto" muted id="bgvideo">
-				<source src="video/apple-iPhone 7.mp4" type="video/mp4">
-			</video>
-			<div class="controls-video">
-				<div class="row">
-					<div class="small-12 columns controls-video-content">
-						<button class="button play fa fa-play-circle-o"></button>
-						<div class="wrapper_title">
-							<h2 class="section-title video-title">Let me show you a few things.</h2>
-							<p class="controls_video-description">Click to play video</p>
+			<div class="page off-canvas-content" data-off-canvas-content>
+				<header>
+					<div class="row">
+						<div class="small-6 medium-2 columns">
+							<span class="site-title text-uppercase">Iddo</span>
+						</div>
+						<div class="top-bar-left show-for-large large-8 columns">
+							<ul class="menu main-nav simple">
+								<li class="menu-item"><a href="#">Home</a></li>
+								<li class="menu-item"><a href="#">Services</a></li>
+								<li class="menu-item"><a href="#">Portfolio</a></li>
+								<li class="menu-item"><a href="#">About</a></li>
+								<li class="menu-item"><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div class="top-bar-right small-6 medium-2 columns">
+							<ul class="menu align-right">
+								<li class="show-for-large"><button class="button hollow default">Sing up</button></li>
+								<li class="hide-for-large"><button type="button" data-open="offCanvasRight" class="button hollow mobile-nav fa fa-bars"></button></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<div class="video-block hide-for-small-only">
+					<video preload="auto" muted id="bgvideo">
+						<source src="video/apple-iPhone 7.mp4" type="video/mp4">
+					</video>
+					<div class="controls-video">
+						<div class="row">
+							<div class="small-12 columns controls-video-content">
+								<button class="button play fa fa-play-circle-o"></button>
+								<div class="wrapper_title">
+									<h2 class="section-title video-title">Let me show you a few things.</h2>
+									<p class="controls_video-description">Click to play video</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="services">
-			<div class="about-services">
-				<div class="row">
-					<div class="small-12 medium-6 large-4 columns">
-						<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>Services.</span></h2>
+				<div class="services">
+					<div class="about-services">
+						<div class="row">
+							<div class="small-12 medium-6 large-4 columns">
+								<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>Services.</span></h2>
+							</div>
+							<div class="small-12 large-8 columns">
+								<ul class="services-list row">
+									<li class="services-list-item cloud-platform small-12 medium-6 large-6 columns">
+										<h3 class="text-uppercase service-title">Feature 1</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+									</li>
+									<li class="services-list-item client-friendly small-12 medium-6 large-6 columns">
+										<h3 class="text-uppercase service-title">Feature 2</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+									</li>
+									<li class="services-list-item fast small-12 medium-6 large-6 columns">
+										<h3 class="text-uppercase service-title">Feature 3</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+									</li>
+									<li class="services-list-item legally small-12 medium-6 large-6 columns">
+										<h3 class="text-uppercase service-title">Feature 4</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="small-12 large-8 columns">
-						<ul class="services-list row">
-							<li class="services-list-item cloud-platform small-12 medium-6 large-6 columns">
-								<h3 class="text-uppercase service-title">Feature 1</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-							</li>
-							<li class="services-list-item client-friendly small-12 medium-6 large-6 columns">
-								<h3 class="text-uppercase service-title">Feature 2</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-							</li>
-							<li class="services-list-item fast small-12 medium-6 large-6 columns">
-								<h3 class="text-uppercase service-title">Feature 3</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-							</li>
-							<li class="services-list-item legally small-12 medium-6 large-6 columns">
-								<h3 class="text-uppercase service-title">Feature 4</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero.</p>
-							</li>
+					<div class="all-services">
+						<ul class="row service-list">
+							<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-lightbulb-o"></a></li>
+							<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-globe"></a></li>
+							<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-camera-retro"></a></li>
+							<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-wrench"></a></li>
+							<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-microphone"></a></li>
+							<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-money"></a></li>
 						</ul>
 					</div>
-				</div>
-			</div>
-			<div class="all-services">
-				<ul class="row service-list">
-					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-lightbulb-o"></a></li>
-					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-globe"></a></li>
-					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-camera-retro"></a></li>
-					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-wrench"></a></li>
-					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-microphone"></a></li>
-					<li class="service-list-item small-4 medium-2 large-2 columns text-center"><a href="/" class="fa fa-money"></a></li>
-				</ul>
-			</div>
 
-		</div>
-		<div class="our-works">
-			<div class="row">
-				<div class="small-12 medium-6 large-4 columns">
-					<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>works.</span></h2>
 				</div>
-			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="button-group">
-						<a href="/" class="button hollow default">All</a>
-						<a href="/" class="button hollow default">Website</a>
-						<a href="/" class="button hollow default">Branding</a>
+				<div class="our-works">
+					<div class="row">
+						<div class="small-12 medium-6 large-4 columns">
+							<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>works.</span></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+							<div class="button-group">
+								<a href="/" class="button hollow default">All</a>
+								<a href="/" class="button hollow default">Website</a>
+								<a href="/" class="button hollow default">Branding</a>
+							</div>
+						</div>
+					</div>
+					<ul class="row work-list">
+						<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work1.jpg" alt="work"></div></li>
+						<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/lawyer.jpg" alt="work"></div></li>
+						<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work.png" alt="work"></div></li>
+						<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/wix1.png" alt="work"></div></li>
+						<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work5.jpg" alt="work"></div></li>
+						<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work6.jpg" alt="work"></div></li>
+					</ul>
+					<div class="row">
+						<div class="columns">
+							<a class="button more fa fa-plus" type="button"></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<ul class="row work-list">
-				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work1.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/lawyer.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work.png" alt="work"></div></li>
-				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/wix1.png" alt="work"></div></li>
-				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work5.jpg" alt="work"></div></li>
-				<li class="work-list-item work-example small-12 medium-6 large-4 columns"><div class="work"><img src="images/works/work6.jpg" alt="work"></div></li>
-			</ul>
-			<div class="row">
-				<div class="columns">
-					<a class="button more fa fa-plus" type="button"></a>
-				</div>
-			</div>
-		</div>
-		<div class="reviews">
-			<!--<div class="row">-->
-				<!--<div class="small-12 large-12 columns">-->
+				<div class="reviews">
 					<div class="orbit review-orbit" role="region" aria-label="Reviews of happy clients" data-orbit>
 						<ul class="orbit-container">
-							<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-							<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+							<!--<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>-->
+							<!--<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
 							<li class="is-active orbit-slide">
 								<div class="user-review">
 									<p class="text-review text-center">
@@ -165,253 +178,254 @@
 							<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
 						</nav>
 					</div><!-- end orbit-->
-				<!--</div>-->
-			<!--</div>-->
-		</div><!--end reviews-->
+				</div><!--end reviews-->
 
-		<div class="our-team">
-			<div class="about-team">
-				<div class="row">
-					<div class="small-12 medium-6 large-4 columns">
-						<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>team</span>.</h2>
+				<div class="our-team">
+					<div class="about-team">
+						<div class="row">
+							<div class="small-12 medium-6 large-4 columns">
+								<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>team</span>.</h2>
+							</div>
+						</div>
+						<ul class="team-member-list row">
+							<li class="team-member-item large-4 columns">
+								<div class="member-social-info">
+									<img class="round" src="images/team/img-3.jpg" alt="team-member">
+									<ul class="team-member-social-link clearfix">
+										<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
+										<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
+										<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
+									</ul>
+								</div>
+								<div class="about-member">
+									<h3 class="text-uppercase about-member-title">Michael Joe</h3>
+									<h3 class="subheader">CEO & Founder</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+								</div>
+							</li>
+							<li class="team-member-item large-4 columns">
+								<div class="member-social-info">
+									<img class="round" src="images/team/img-1.jpg" alt="team-member">
+									<ul class="team-member-social-link clearfix">
+										<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
+										<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
+										<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
+									</ul>
+								</div>
+								<div class="about-member">
+									<h3 class="text-uppercase about-member-title">Jemmy Scott</h3>
+									<h3 class="subheader">Designer</h3>
+									<p>Voluptatem accusantium doloremque laudantium, totam rem aperiam.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+								</div>
+							</li>
+							<li class="team-member-item large-4 columns">
+								<div class="member-social-info">
+									<img class="round" src="images/team/img-2.jpg" alt="team-member">
+									<ul class="team-member-social-link clearfix">
+										<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
+										<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
+										<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
+									</ul>
+								</div>
+								<div class="about-member">
+									<h3 class="text-uppercase about-member-title">Jasmin West</h3>
+									<h3 class="subheader">Manager</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+								</div>
+							</li>
+						</ul>
+						<div class="row">
+							<div class="columns">
+								<a class="button more fa fa-plus" type="button"></a>
+							</div>
+						</div>
+					</div>
+					<div class="team-achievements">
+						<ul class="row achievements-list">
+							<li class="medium-3 large-3 columns achievements-list-item">
+								<div class="icon text-center"><i class="fa fa-gift" aria-hidden="true"></i></div>
+								<div class="stat statistic text-center">2009</div>
+								<h3 class="text-uppercase text-center achievement-description">Perspiciatis</h3>
+							</li>
+							<li class="medium-3 large-3 columns achievements-list-item">
+								<div class="icon text-center"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+								<div class="stat statistic text-center">13,562</div>
+								<h3 class="text-uppercase text-center achievement-description">Comments</h3>
+							</li>
+							<li class="medium-3 large-3 columns achievements-list-item">
+								<div class="icon text-center"><i class="fa fa-coffee" aria-hidden="true"></i></div>
+								<div class="stat statistic text-center">8,710</div>
+								<h3 class="text-uppercase text-center achievement-description">Coffee cups</h3>
+							</li>
+							<li class="medium-3 large-3 columns achievements-list-item">
+								<div class="icon text-center"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+								<div class="stat statistic text-center">715</div>
+								<h3 class="text-uppercase text-center achievement-description">Awards</h3>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="team-member-list row">
-					<li class="team-member-item large-4 columns">
-						<div class="member-social-info">
-							<img class="round" src="images/team/img-3.jpg" alt="team-member">
-							<ul class="team-member-social-link clearfix">
-								<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
-								<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
-								<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
-							</ul>
-						</div>
-						<div class="about-member">
-							<h3 class="text-uppercase about-member-title">Michael Joe</h3>
-							<h3 class="subheader">CEO & Founder</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-						</div>
-					</li>
-					<li class="team-member-item large-4 columns">
-						<div class="member-social-info">
-							<img class="round" src="images/team/img-1.jpg" alt="team-member">
-							<ul class="team-member-social-link clearfix">
-								<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
-								<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
-								<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
-							</ul>
-						</div>
-						<div class="about-member">
-							<h3 class="text-uppercase about-member-title">Jemmy Scott</h3>
-							<h3 class="subheader">Designer</h3>
-							<p>Voluptatem accusantium doloremque laudantium, totam rem aperiam.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-						</div>
-					</li>
-					<li class="team-member-item large-4 columns">
-						<div class="member-social-info">
-							<img class="round" src="images/team/img-2.jpg" alt="team-member">
-							<ul class="team-member-social-link clearfix">
-								<li class="float-left"><a class="fa fa-twitter" href="/"></a></li>
-								<li class="float-left"><a class="fa fa-facebook" href="/"></a></li>
-								<li class="float-left"><a class="fa fa-instagram" href="/"></a></li>
-							</ul>
-						</div>
-						<div class="about-member">
-							<h3 class="text-uppercase about-member-title">Jasmin West</h3>
-							<h3 class="subheader">Manager</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.Voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-						</div>
-					</li>
-				</ul>
-				<div class="row">
-					<div class="columns">
-						<a class="button more fa fa-plus" type="button"></a>
-					</div>
-				</div>
-			</div>
-			<div class="team-achievements">
-				<ul class="row achievements-list">
-					<li class="medium-3 large-3 columns achievements-list-item">
-						<div class="icon text-center"><i class="fa fa-gift" aria-hidden="true"></i></div>
-						<div class="stat statistic text-center">2009</div>
-						<h3 class="text-uppercase text-center achievement-description">Perspiciatis</h3>
-					</li>
-					<li class="medium-3 large-3 columns achievements-list-item">
-						<div class="icon text-center"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
-						<div class="stat statistic text-center">13,562</div>
-						<h3 class="text-uppercase text-center achievement-description">Comments</h3>
-					</li>
-					<li class="medium-3 large-3 columns achievements-list-item">
-						<div class="icon text-center"><i class="fa fa-coffee" aria-hidden="true"></i></div>
-						<div class="stat statistic text-center">8,710</div>
-						<h3 class="text-uppercase text-center achievement-description">Coffee cups</h3>
-					</li>
-					<li class="medium-3 large-3 columns achievements-list-item">
-						<div class="icon text-center"><i class="fa fa-trophy" aria-hidden="true"></i></div>
-						<div class="stat statistic text-center">715</div>
-						<h3 class="text-uppercase text-center achievement-description">Awards</h3>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="our-skills">
-			<div class="row">
-				<div class=" small-12 medium-6 large-4 columns">
-					<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>skills</span>.</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-8 columns">
-					<div class="row skill-diagram hide-for-small-only">
-						<div class="medium-3 large-3 columns">
-							<div class="diagram three-quarter"></div>
-						</div>
-						<div class="medium-3 large-3 columns">
-							<div class="diagram quarter"></div>
-						</div>
-						<div class="medium-3 large-3 columns">
-							<div class="diagram three-quarter"></div>
-						</div>
-						<div class="medium-3 large-3 columns">
-							<div class="diagram half-diagram"></div>
+				<div class="our-skills">
+					<div class="row">
+						<div class=" small-12 medium-6 large-4 columns">
+							<h2 class="text-uppercase section-title"><span>Our</span> <br> <span>skills</span>.</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="columns large-11 large-offset-1">
-							<h3 class="text-uppercase article-title">Something about our skills</h3>
-							<p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Cupiditate delectus nemo quia veniam. A assumenda dignissimos, enim expedita explicabo
-								ipsum laudantium minima, nihil nulla quasi quod quos repellat vel vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Cupiditate delectus nemo quia veniam. A assumenda dignissimos, enim expedita explicabo
-								ipsum laudantium minima, nihil nulla quasi quod quos repellat vel vero</p>
-							<p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Cupiditate delectus nemo quia veniam. A assumenda dignissimos, enim expedita explicabo
-								ipsum laudantium minima, nihil nulla quasi.</p>
+						<div class="large-8 columns">
+							<div class="row skill-diagram hide-for-small-only">
+								<div class="medium-3 large-3 columns">
+									<div class="diagram three-quarter"></div>
+								</div>
+								<div class="medium-3 large-3 columns">
+									<div class="diagram quarter"></div>
+								</div>
+								<div class="medium-3 large-3 columns">
+									<div class="diagram three-quarter"></div>
+								</div>
+								<div class="medium-3 large-3 columns">
+									<div class="diagram half-diagram"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="columns large-11 large-offset-1">
+									<h3 class="text-uppercase article-title">Something about our skills</h3>
+									<p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Cupiditate delectus nemo quia veniam. A assumenda dignissimos, enim expedita explicabo
+										ipsum laudantium minima, nihil nulla quasi quod quos repellat vel vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Cupiditate delectus nemo quia veniam. A assumenda dignissimos, enim expedita explicabo
+										ipsum laudantium minima, nihil nulla quasi quod quos repellat vel vero</p>
+									<p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Cupiditate delectus nemo quia veniam. A assumenda dignissimos, enim expedita explicabo
+										ipsum laudantium minima, nihil nulla quasi.</p>
+								</div>
+							</div>
+						</div>
+						<div class="large-4 columns">
+							<ul class="accordion skill-list" data-allow-all-closed="true" data-accordion>
+								<li class="accordion-item skill-list-item" data-accordion-item>
+									<a href="#" class="accordion-title skill-title"><span class="icon">&#xf135;</span> Totam rem aperiam eaque</a>
+									<div class="accordion-content" data-tab-content>
+										<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
+											nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
+									</div>
+								</li>
+								<li class="accordion-item skill-list-item">
+									<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf13e;</span> Nemo enim ipsam voluptatem</a>
+									<div class="accordion-content" data-tab-content>
+										<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
+											nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
+									</div>
+								</li>
+								<li class="accordion-item skill-list-item">
+									<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf124;</span> Ut enim ad minima veniam</a>
+									<div class="accordion-content" data-tab-content>
+										<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
+											nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
+									</div>
+								</li>
+								<li class="accordion-item skill-list-item">
+									<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf095;</span> Quis nostrum exercitationem ullam</a>
+									<div class="accordion-content" data-tab-content>
+										<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
+											nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
+									</div>
+								</li>
+								<li class="accordion-item skill-list-item">
+									<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf02d;</span> Neque porro quisquam est qui</a>
+									<div class="accordion-content" data-tab-content>
+										<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
+											nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div><!--end about-our-skills-->
+				</div>
+				<div class="subscribe">
+					<div class="row">
+						<div class="small-11 small-offset-1 medium-6 columns large-offset-3">
+							<p class="subscribe-description">Enter your e-mail here...</p>
+						</div>
+						<div class="small-5 small-offset-3 medium-2 medium-offset-0 columns end">
+							<button class="button float-right default">Subscribe</button>
 						</div>
 					</div>
-				</div>
-				<div class="large-4 columns">
-					<ul class="accordion skill-list" data-allow-all-closed="true" data-accordion>
-						<li class="accordion-item skill-list-item" data-accordion-item>
-							<a href="#" class="accordion-title skill-title"><span class="icon">&#xf135;</span> Totam rem aperiam eaque</a>
-							<div class="accordion-content" data-tab-content>
-								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
-									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
-							</div>
-						</li>
-						<li class="accordion-item skill-list-item">
-							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf13e;</span> Nemo enim ipsam voluptatem</a>
-							<div class="accordion-content" data-tab-content>
-								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
-									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
-							</div>
-						</li>
-						<li class="accordion-item skill-list-item">
-							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf124;</span> Ut enim ad minima veniam</a>
-							<div class="accordion-content" data-tab-content>
-								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
-									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
-							</div>
-						</li>
-						<li class="accordion-item skill-list-item">
-							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf095;</span> Quis nostrum exercitationem ullam</a>
-							<div class="accordion-content" data-tab-content>
-								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
-									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
-							</div>
-						</li>
-						<li class="accordion-item skill-list-item">
-							<a href="#" class="accordion-title skill-title" data-accordion-item><span class="icon">&#xf02d;</span> Neque porro quisquam est qui</a>
-							<div class="accordion-content" data-tab-content>
-								<p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									At, atque blanditiis consequatur dicta doloremque dolores hic, illum in molestiae
-									nihil nisi placeat quas quia similique tempora temporibus tenetur unde velit.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div><!--end about-our-skills-->
-		</div>
-		<div class="subscribe">
-			<div class="row">
-				<div class="small-11 small-offset-1 medium-6 columns large-offset-3">
-					<p class="subscribe-description">Enter your e-mail here...</p>
-				</div>
-				<div class="small-5 small-offset-3 medium-2 medium-offset-0 columns end">
-					<button class="button float-right default">Subscribe</button>
-				</div>
-			</div>
 
-		</div>
-		<div class="partners">
-			<ul class="row partners-list">
-				<li class="partners-list-item small-12 small-offset-0 medium-4 medium-offset-0 large-2 columns large-offset-1"><a href="#"><img src="images/partners/evato.png" alt="Evato" class="partner-logo"></a></li>
-				<li class="partners-list-item small-12 medium-4 large-2 columns"><a href="#"><img src="images/partners/wordpress.png" alt="Wordpress" class="partner-logo"></a></li>
-				<li class="partners-list-item small-12 medium-4 large-2 columns"><a href="#"><img src="images/partners/dribble.png" alt="Dribble" class="partner-logo"></a></li>
-				<li class="partners-list-item small-12 medium-4 large-2 columns"><a href="#"><img src="images/partners/evato.png" alt="Evato" class="partner-logo"></a></li>
-				<li class="partners-list-item small-12 medium-4 large-2 columns end"><a href="#"><img src="images/partners/wordpress.png" alt="Wordpress" class="partner-logo"></a></li>
-			</ul>
-		</div>
-		<div class="contact-us">
-			<div class="row">
-				<div class="small-12 medium-6 large-4 columns">
-					<h2 class="text-uppercase section-title"> <span>Contact</span> <br> <span>us.</span></h2>
 				</div>
-			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<p class="contacts address">123A Building, Road Street, Orlando District, US</p>
-					<p class="contacts">
-						<span class="phone">+01 234 567 89 - +01 234 567 89</span> <span class="contact-mail">contact@book.com</span>
-					</p>
-					<ul class="social-link clearfix">
-						<li class="social-link-item float-left"><a href="/" class="fa fa-twitter"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-facebook"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-google-plus-square"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-pinterest"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-instagram"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-youtube-play"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-skype"></a></li>
-						<li class="social-link-item float-left"><a href="/" class="fa fa-globe"></a></li>
+				<div class="partners">
+					<ul class="row partners-list">
+						<li class="partners-list-item small-12 small-offset-0 medium-4 medium-offset-0 large-2 columns large-offset-1"><a href="#"><img src="images/partners/evato.png" alt="Evato" class="partner-logo"></a></li>
+						<li class="partners-list-item small-12 medium-4 large-2 columns"><a href="#"><img src="images/partners/wordpress.png" alt="Wordpress" class="partner-logo"></a></li>
+						<li class="partners-list-item small-12 medium-4 large-2 columns"><a href="#"><img src="images/partners/dribble.png" alt="Dribble" class="partner-logo"></a></li>
+						<li class="partners-list-item small-12 medium-4 large-2 columns"><a href="#"><img src="images/partners/evato.png" alt="Evato" class="partner-logo"></a></li>
+						<li class="partners-list-item small-12 medium-4 large-2 columns end"><a href="#"><img src="images/partners/wordpress.png" alt="Wordpress" class="partner-logo"></a></li>
 					</ul>
 				</div>
+				<div class="contact-us">
+					<div class="row">
+						<div class="small-12 medium-6 large-4 columns">
+							<h2 class="text-uppercase section-title"> <span>Contact</span> <br> <span>us.</span></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+							<p class="contacts address">123A Building, Road Street, Orlando District, US</p>
+							<p class="contacts">
+								<span class="phone">+01 234 567 89 - +01 234 567 89</span> <span class="contact-mail">contact@book.com</span>
+							</p>
+							<ul class="social-link clearfix">
+								<li class="social-link-item float-left"><a href="/" class="fa fa-twitter"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-facebook"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-google-plus-square"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-pinterest"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-instagram"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-youtube-play"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-skype"></a></li>
+								<li class="social-link-item float-left"><a href="/" class="fa fa-globe"></a></li>
+							</ul>
+						</div>
+					</div>
+					<form action="#" method="post">
+						<div class="row">
+							<div class="medium-4 columns">
+								<input id="user-mail" type="email" placeholder="&#xf0e0; email"></div>
+							<div class="medium-4 columns end">
+								<input id="user-name" type="text" placeholder="&#xf007; name">
+							</div>
+						</div>
+						<div class="row">
+							<div class="medium-8 columns">
+								<textarea name="message" id="user-message" cols="30" rows="10" placeholder="&#xf040; Message"></textarea>
+							</div>
+							<div class="medium-4 columns">
+								<button class="send-form button expanded" type="submit"><span class="icon">&#xf05d;</span><span>Submit</span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<div class="row">
+						<div class="medium-4 medium-offset-4 columns">
+							<p class="text-center"><span class="text-uppercase text-center site-title">Iddo</span></p>
+							<p class="copy-rights text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2014 IDDO. All rights resevered.</p>
+							<p class="author text-center">Designed by <span class="text-uppercase">DZOAN</span></p>
+							<p class="text-center"><a href="#" class="button scroll-up fa fa-chevron-up"></a></p>
+						</div>
+					</div>
+				</footer>
 			</div>
-			<form action="#" method="post">
-				<div class="row">
-					<div class="medium-4 columns">
-						<input id="user-mail" type="email" placeholder="&#xf0e0; email"></div>
-					<div class="medium-4 columns end">
-						<input id="user-name" type="text" placeholder="&#xf007; name">
-					</div>
-				</div>
-				<div class="row">
-					<div class="medium-8 columns">
-						<textarea name="message" id="user-message" cols="30" rows="10" placeholder="&#xf040; Message"></textarea>
-					</div>
-					<div class="medium-4 columns">
-						<button class="send-form button expanded" type="submit"><span class="icon">&#xf05d;</span><span>Submit</span></button>
-					</div>
-				</div>
-			</form>
-		</div>
-		<footer>
-			<div class="row">
-				<div class="medium-4 medium-offset-4 columns">
-					<p class="text-center"><span class="text-uppercase text-center site-title">Iddo</span></p>
-					<p class="copy-rights text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2014 IDDO. All rights resevered.</p>
-					<p class="author text-center">Designed by <span class="text-uppercase">DZOAN</span></p>
-					<p class="text-center"><a href="#" class="button scroll-up fa fa-chevron-up"></a></p>
-				</div>
-			</div>
-		</footer>
-	</div>
+		</div><!--offcanvas inner-->
+	</div><!-- offcanvas wrapper-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/foundation.min.js"></script>
 	<script src="js/plugins/foundation.orbit.js"></script>
+	<!--<script src="js/plugins/foundation.offcanvas.js"></script>-->
 	<script src="js/video-play.js"></script>
 	<script src="js/app.js"></script>
 </body>
