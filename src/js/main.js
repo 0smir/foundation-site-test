@@ -4,7 +4,9 @@
 $(document).ready(function () {
     var mobileNavTrigger = $('.mobile-nav'),
         body = $('body'),
-        closeMobileNav = $(".mobile-nav-close-button");
+        closeMobileNav = $(".mobile-nav-close-button"),
+        modalClose = $('.modal-close');
+    console.log(modalClose);
 
     $(".play").on("click", function (){
         $(".controls-video").fadeOut();
@@ -62,8 +64,15 @@ $(document).ready(function () {
     });
 
 
+    $(".modal-subscription-trigger").on('click', function () {
+        $(".subscription-form-wrapper").addClass('show');
+        $(body).addClass('blocked');
+    });
 
-
+    $(modalClose).on('click', function () {
+        $(".subscription-form-wrapper").removeClass('show');
+        $(body).removeClass('blocked');
+    });
 
 });
 

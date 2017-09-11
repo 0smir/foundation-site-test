@@ -77,3 +77,38 @@
      }
    }
  }
+
+.subscription-form-wrapper{
+  .modal-close-wrapper{
+    display: none;
+    margin-bottom: 30px;
+    @include custom-breakpoint(medium) {
+      margin-bottom: 60px;
+    }
+  }
+  .modal-close{
+    line-height: 2.1rem;
+  }
+  &.show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1300;
+    background: rgba($onyx-gray, 0.9);
+    padding-top: 30px;
+    @include custom-breakpoint(medium){
+      padding-top: 100px;
+    }
+
+    .modal-close-wrapper{
+      display: block;
+    }
+    .subscription-form{
+      position: relative;
+    }
+
+  }
+
+}
