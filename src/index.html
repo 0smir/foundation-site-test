@@ -13,8 +13,8 @@
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 			<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
-				<button class="close-button" aria-label="Close menu" type="button" data-close>
-					<span aria-hidden="true">&times;</span>
+				<button class="close-button mobile-nav-close-button" aria-label="Close menu" type="button" data-close>
+					<span class="mobile-nav-close-icon" aria-hidden="true">&times;</span>
 				</button>
 				<h3 class="text-uppercase text-center off-canvas-title">Menu</h3>
 				<ul class="vertical menu off-canvas-menu">
@@ -417,7 +417,7 @@
 							<p class="subscribe-description">Enter your e-mail here...</p>
 						</div>
 						<div class="small-5 small-offset-3 medium-2 medium-offset-0 columns end">
-							<button class="button float-right default">Subscribe</button>
+							<button class="button float-right default ">Subscribe</button>
 						</div>
 					</div>
 
@@ -455,17 +455,23 @@
 							</ul>
 						</div>
 					</div>
-					<form action="#" method="post">
+					<form id="subscribe_form" class="subscription-form" action="#" method="post">
 						<div class="row">
 							<div class="medium-4 columns">
-								<input id="user-mail" type="email" placeholder="&#xf0e0; email"></div>
+								<div class="subscription-form__row">
+									<input id="user-mail" name="mail" type="email" placeholder="&#xf0e0; email"></div>
+								</div>
 							<div class="medium-4 columns end">
-								<input id="user-name" type="text" placeholder="&#xf007; name">
+								<div class="subscription-form__row">
+									<input id="user-name" name="name" type="text" placeholder="&#xf007; name">
+								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="medium-8 columns">
-								<textarea name="message" id="user-message" cols="30" rows="10" placeholder="&#xf040; Message"></textarea>
+								<div class="subscription-form__row">
+									<textarea name="message" id="user-message" cols="30" rows="10" placeholder="&#xf040; Message"></textarea>
+								</div>
 							</div>
 							<div class="medium-4 columns">
 								<button class="send-form button expanded" type="submit"><span class="icon">&#xf05d;</span><span>Submit</span></button>
@@ -489,8 +495,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/foundation.min.js"></script>
 	<script src="js/plugins/foundation.orbit.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<!--<script src="js/plugins/foundation.offcanvas.js"></script>-->
-	<script src="js/video-play.js"></script>
+	<script src="js/main.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>

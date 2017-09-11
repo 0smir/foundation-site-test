@@ -12,13 +12,28 @@
      color: $silver-gray;
      font: 1.5rem/1.8 "Helvetica", Arial sans-serif;
    }
+   .subscription-form__row{
+     position: relative;
+   }
 
    input,
    textarea {
+     position: relative;
      font-weight: bold;
      text-transform: uppercase;
-     position: relative;
      @include placeholder($dark-gray);
+     &.error{
+       border: 1px solid $red;
+       box-shadow: 0px 0px 2px 2px rgba($red, 0.2);
+     }
+   }
+   label{
+     &.error{
+       position: absolute;
+       bottom: -28px;
+       left: 5px;
+       color: $red;
+     }
    }
 
    textarea {
