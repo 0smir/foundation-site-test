@@ -6,7 +6,6 @@ $(document).ready(function () {
         body = $('body'),
         closeMobileNav = $(".mobile-nav-close-button"),
         modalClose = $('.modal-close');
-    console.log(modalClose);
 
     $(".play").on("click", function (){
         $(".controls-video").fadeOut();
